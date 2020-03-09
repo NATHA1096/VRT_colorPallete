@@ -132,4 +132,11 @@ function hsvToRgb(h, s, v){
 
     return [r * 255, g * 255, b * 255];
 }
+
+function rgbToHex(r, g, b) {
+    return "#" +
+        ("0" + parseInt(r, 10).toString(16)).slice(-2) +
+        ("0" + parseInt(g, 10).toString(16)).slice(-2) +
+        ("0" + parseInt(b, 10).toString(16)).slice(-2);
+}
 	
